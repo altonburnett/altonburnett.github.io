@@ -1,15 +1,21 @@
-ul{
-    list-style-type:none;
-    margin: 0;
+.navigationList {
+   list-style-type: none;
+    margin: 10;
     padding: 0;
     width: 100%;
     height: 45px;
     position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has to much content */
-    background-color: #003399;
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    background-color: #099;
 }
 
-li a {
+.navigationListItem {
+    color: #000000;
+    display: inline;
+}
+
+
+.navigationListItem a {
     color: #CCFFCC;
     padding: 8px 16px;
     text-decoration: none;
@@ -19,30 +25,41 @@ li a {
 }
 
 /* Change the link color on hover */
-li a:hover {
+.navigationListItem a:hover {
     background-color: #0099CC;
     color: white;
 }
 
-li:last-child {
-    border-bottom: none;
-}
 
-.active {
-   background-color: #66CCFF;
+.activeListItem {
+    background-color: #66CCFF;
+    display: inline;
 }
 
 .activeLink {
     color: #003399;
-}
-
-li {
-    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
     display: inline;
 }
 
-.pageBackground {
+.activeListItem:last-child {
+    border-bottom: none;
+}
+
+.navigationListItem:last-child {
+    border-bottom: none;
+}
+
+.TestClass {
     background-color: #6795e0;
+}
+
+.pageBackground {
+    background-image: url('pictures/th.jpg');
+    
     width: 100%;
     height: 100%;
     margin: 0;
@@ -55,13 +72,30 @@ iframe {
 }
 
 .paragraphTitle {
-    text-align: center;
+    text-align : center;
     font-size: 24px;
     color: #003399;
 }
 
 .paragraphBody {
-    text-align: left;
-    font-size: 18px;
+    font-size: 18px; 
+    color: #003399;
+    text-align: justify;
+}
+
+.paragraphCopyright {
+    font-size: 14px; 
+    color: #003399;
+    text-align: center;
+    width: 100%;
+}
+
+li {
+    font-size: 18px; 
+    color: #003399;
+}
+
+td {
+    font-size: 14px; 
     color: #003399;
 }
